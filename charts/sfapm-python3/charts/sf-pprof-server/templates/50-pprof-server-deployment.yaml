@@ -6,7 +6,7 @@ metadata:
     {{- include "sfapm.labels" . | nindent 4 }}
     app: pprof
     role: pprof-server
-    snappyflow/component: snappyflow-apm
+    # snappyflow/component: snappyflow-apm
     {{ default "snappyflow/appname" .Values.global.sfappname_key }}: {{ default .Release.Name .Values.global.sfappname }}
     {{ default "snappyflow/projectname" .Values.global.sfprojectname_key }}: {{ default .Release.Name .Values.global.sfprojectname }}
 spec:
@@ -26,7 +26,7 @@ spec:
         {{- include "sfapm.selectorLabels" . | nindent 8 }}
         app: pprof
         role: pprof-server
-        snappyflow/component: snappyflow-apm
+        # snappyflow/component: snappyflow-apm
         {{ default "snappyflow/appname" .Values.global.sfappname_key }}: {{ default .Release.Name .Values.global.sfappname }}
         {{ default "snappyflow/projectname" .Values.global.sfprojectname_key }}: {{ default .Release.Name .Values.global.sfprojectname }}
     spec:

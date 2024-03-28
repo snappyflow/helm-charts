@@ -3,5 +3,5 @@ name: sf-apm
 description: A Helm chart to deploy apm on Kubernetes
 home: https://www.snappyflow.io
 type: application
-version: 4.0.5
+version: 4.0.6
 appVersion: 4.0

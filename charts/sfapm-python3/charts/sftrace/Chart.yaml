@@ -3,5 +3,5 @@ name: sftrace
 description: A Helm chart to deploy trace on Kubernetes
 home: https://www.snappyflow.io
 type: application
-version: 4.0.397
+version: 4.0.398
 appVersion: 4.0

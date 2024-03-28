@@ -3,5 +3,5 @@ name: sf-vizbuilder
 description: A Helm chart to deploy snappyflow on Kubernetes
 home: https://www.snappyflow.io
 type: application
-version: 4.0.1
+version: 4.0.2
 appVersion: 4.0

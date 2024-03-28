@@ -25,7 +25,7 @@ spec:
         release: {{ .Release.Name }}
         snappyflow/projectname: {{ .Values.global.snappyflowProjectName }}
         snappyflow/appname: {{ .Values.global.snappyflowAppName }}
-        snappyflow/component: kafka
+        # snappyflow/component: kafka
       {{- if or .Values.podAnnotations .Values.prometheus.jmx.enabled }}
       annotations:
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
