@@ -125,6 +125,16 @@ spec:
             - name: LOG_LEVEL
               value: info
           {{- end }}
+            - name: DD_LOGS_INJECTION
+              value: "True"
+            - name: DD_AGENT_HOST
+              value: "10.6.24.4"
+            - name: DD_SERVICE
+              value: "vizbuilder-service"
+            - name: DD_ENV
+              value: "staging"
+            - name: DD_VERSION
+              value: "1.0.0"
           envFrom:
             - configMapRef:
                 name: {{ include "sfapm.fullname" . }}-vizbuilder                                  
